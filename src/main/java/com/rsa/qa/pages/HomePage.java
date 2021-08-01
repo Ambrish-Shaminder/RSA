@@ -21,9 +21,7 @@ public class HomePage extends BaseClass {
 	WebElement coursesLink;
 
 	public void clickCourses() {
-		coursesLink.click();
-		
-		
+		coursesLink.click();		
 	}
 		
 		

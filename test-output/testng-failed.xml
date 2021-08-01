@@ -5,8 +5,9 @@
     <classes>
       <class name="com.rsa.qa.testCases.CoursesPageTest">
         <methods>
+          <include name="tearDown"/>
+          <include name="verify_courses_on_clicking_AdminUser"/>
           <include name="setup"/>
-          <include name="verify_title_coursesPage"/>
         </methods>
       </class> <!-- com.rsa.qa.testCases.CoursesPageTest -->
     </classes>
