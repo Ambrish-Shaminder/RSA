@@ -15,8 +15,8 @@ public static int implecit_wait= 10;
 public static void takeSnapShot(WebDriver driver,String fileWithPath) {
 
     //Convert web driver object to TakeScreenshot
-try{	
-    TakesScreenshot scrShot =((TakesScreenshot)driver); 	
+try{
+    TakesScreenshot scrShot =((TakesScreenshot)driver);
 
     //Call getScreenshotAs method to create image file
 
@@ -31,14 +31,14 @@ try{
             FileUtils.copyFile(SrcFile, DestFile);
 }
 catch (Exception e) {
-	
+
 	e.printStackTrace();
 }
 
 }
-	
-	
-	
-	
-	
+
+
+
+
+
 }

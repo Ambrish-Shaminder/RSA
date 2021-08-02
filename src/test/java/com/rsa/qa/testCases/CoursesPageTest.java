@@ -1,7 +1,6 @@
 package com.rsa.qa.testCases;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -20,7 +19,7 @@ public class CoursesPageTest extends BaseClass {
 		hp= new HomePage();
 		cp=new CoursesPage();
 		hp.clickCourses();
-	
+
 	}
 
 	@Test
@@ -28,14 +27,14 @@ public class CoursesPageTest extends BaseClass {
 		String coursePageTitle= cp.verify_coursePage_Title();
 		Assert.assertEquals(coursePageTitle, "Rahul Shetty Academy");
 	}
-	
+
 	@Test
 	public void verify_search_for_postman_course() {
 		cp.searchPostmanCourse();
 		System.out.println(cp.Postman_course_title());
 		Assert.assertEquals(cp.Postman_course_title(), "Learn Postman for API Automation Testing with Javascript");
 	}
-	
+
 	@Test
 	public void verify_courses_on_clicking_AdminUser() throws InterruptedException {
 		cp.click_category_All();
