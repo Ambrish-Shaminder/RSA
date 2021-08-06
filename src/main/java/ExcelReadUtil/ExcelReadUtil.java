@@ -21,7 +21,7 @@ public class ExcelReadUtil extends BaseClass{
 	public ExcelReadUtil (){
 		super();
 		try {
-			fis= new FileInputStream(prop.getProperty("excelFilePath"));
+			fis= new FileInputStream(prop.getProperty("user.dir")+prop.getProperty("excelFilePath"));
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}

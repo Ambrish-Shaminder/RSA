@@ -20,9 +20,12 @@ public class BaseClass {
 	{
 		try {
 		prop=new Properties();
-		FileInputStream fip=new FileInputStream("C:\\Users\\10294465\\git\\RSA\\src\\main\\java\\com\\rsa\\qa\\config\\config.properties");
+		FileInputStream fip=new FileInputStream(System.getProperty("user.dir")+ "\\src\\main\\java\\com\\rsa\\qa\\config\\config.properties");
 		prop.load(fip);	}
-
+		
+		//("C:\\Users\\10294465\\git\\RSA\\src\\main\\java\\com\\rsa\\qa\\config\\config.properties");
+		
+		//user.dir" + "\\RSA\\src\\main\\java\\com\\rsa\\qa\\config\\config.properties
 		catch (Exception e) {
 			e.printStackTrace();
 		}
