@@ -57,7 +57,7 @@ public class CoursesPageTest extends BaseClass {
 		cp.click_author_AdminUser();
 		Assert.assertEquals(cp.header_adminUser(), "AdminUser");
 	}
-
+	//test for git
 	@AfterMethod
 	public void tearDown() {
 		driver.close();

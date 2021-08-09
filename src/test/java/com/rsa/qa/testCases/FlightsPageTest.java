@@ -37,6 +37,7 @@ class FlightsPageTest extends BaseClass{
 		Assert.assertEquals(fp_Title, "Flight Booking, Flight Tickets Booking at Lowest Airfare | MakeMyTrip", "The Title of Flights Page does not match");
 	}
 
+		//test2 for git
 	@Test (priority= 3)
 	public void from_City_selection_test() throws Exception {
 	//	hp.click_mmt_logo();
