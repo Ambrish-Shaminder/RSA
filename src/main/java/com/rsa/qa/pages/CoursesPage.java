@@ -45,7 +45,7 @@ public class CoursesPage extends BaseClass {
 		searchBox.sendKeys("postman");
 		btn_search.click();
 	}
-
+//test1
 	public String Postman_course_title() {
 		return postmanCourseTitle.getText();
 	}
